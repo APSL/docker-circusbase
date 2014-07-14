@@ -2,7 +2,7 @@
 Docker circus / envtpl base project
 ===================================
 
-Docker base for processes managed with circus. Config parameters with envtpl.
+Docker base image for processes managed with circus. Config parameters with envtpl.
 
 Description
 ===========
