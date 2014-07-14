@@ -34,11 +34,11 @@ RUN \
 
 # circus conf
 ADD conf/circus.ini.tpl  /etc/
-ADD conf/circus.d  /etc/
-
 # start script
 ADD start.sh /bin/
-ADD setup.d /etc/
+RUN \ 
+    mkdir  /etc/circus.d ;\
+    mkdir /etc/setup.d
 
 EXPOSE 8080
 CMD /bin/start.sh
