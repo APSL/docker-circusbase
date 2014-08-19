@@ -41,5 +41,5 @@ RUN \
     mkdir  /etc/circus.d ;\
     mkdir /etc/setup.d
 
-EXPOSE 8080
+EXPOSE 8888
 CMD /bin/start.sh
