@@ -25,12 +25,16 @@ RUN \
     apt-get -y  install python-zmq python-gevent python-gevent-websocket \
       python-bottle python-mako python-anyjson python-greenlet \
       python-beaker python-psutil python-tornado \
-      unzip wget vim-tiny python-distribute python-pip python-jinja2 && apt-get clean
+      unzip wget vim-tiny python-distribute python-pip python-jinja2 \
+      software-properties-common \
+      && apt-get clean
+
+RUN pip --no-input install --upgrade pip
 
 RUN \
-    pip install circus==0.11.1 ;\
-    pip install circus-web==0.5 ;\
-    pip install envtpl
+    pip --no-input install circus==0.11.1 ;\
+    pip --no-input install circus-web==0.5 ;\
+    pip --no-input install envtpl==0.3.2
 
 
 # circus conf
