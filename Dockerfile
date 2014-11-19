@@ -46,4 +46,4 @@ RUN \
     mkdir /etc/setup.d
 
 EXPOSE 8888
-CMD /bin/start.sh
+CMD ["bin/start.sh"]
