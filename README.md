@@ -24,3 +24,4 @@ Run circus statsd (default False)::
 
     -e CIRCUS_STATSD=true    
 
+.tst
